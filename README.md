@@ -1,7 +1,7 @@
 # agonlight2-projetcs
-Utilities for agonliht2
+Utilities for agonlight2
 
-The projects are built with AgDev  and binaries are provided, that you can put in the /mos directory of the SD-card.
+The projects are built with AgDev and binaries are provided, that you can put in the /mos directory of the SD-card.
 
 ### scani2c
 allows you to scan the i2c bus of a module connected to the UEXT connector. The i2c address is displayed.
