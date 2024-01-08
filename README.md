@@ -12,3 +12,11 @@ output:
 I2C bus scanning
 
 Address 0x3C
+
+### send
+allows to send file to RS232 (UEXT)
+
+Put a file to /mos directory
+
+launch file send FILENAME
+
