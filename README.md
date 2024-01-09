@@ -23,3 +23,8 @@ Put a file to /mos directory
 
 launch file send FILENAME
 
+### dumpview
+allows to dump a file to screen.
+
+show readme file from dumpview for more information
+
