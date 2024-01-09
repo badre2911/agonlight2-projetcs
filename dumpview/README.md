@@ -2,11 +2,13 @@
 allows you to display a file as a dump.
 This program is a first version, it can be evolved if necessary.
 
+Limited size file is 32k
+
 Copy the dumpview.bin file to the /mos directory
 
 usage: dumpview FILENAME
 
-The following keyboard keys allow you to navigate the screen.
+The following keyboard keys allow you to navigate to the screen.
 * Up arrow
 * Down arrow
 * Page Down
