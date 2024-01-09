@@ -2,11 +2,12 @@
 allows you to display a file as a dump.
 This program is a first version, it can be evolved if necessary.
 
-Limited size file is 32k
+>[!NOTE]
+>Limited size file is 32k
 
 Copy the dumpview.bin file to the /mos directory
 
-usage: dumpview FILENAME
+Example commande line: `dumpview <filename>`
 
 The following keyboard keys allow you to navigate to the screen.
 * Up arrow
@@ -16,5 +17,6 @@ The following keyboard keys allow you to navigate to the screen.
 * Home key
 * End key
 * F10 to exit
+
 
 ![Screenshot](assets/Capture.JPG)
