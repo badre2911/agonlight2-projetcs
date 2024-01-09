@@ -15,4 +15,4 @@ The following keyboard keys allow you to navigate the screen.
 *End key
 *F10 to exit
 
-![Screenshot](https://github.com/badre2911/agonlight2-projetcs/tree/main/dumpview/assets/Capture.JPG)
+![Screenshot](assets/Capture.JPG)
