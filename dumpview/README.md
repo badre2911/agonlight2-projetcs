@@ -9,10 +9,10 @@ usage: dumpview FILENAME
 The following keyboard keys allow you to navigate the screen.
 * Up arrow
 * Down arrow
-*Page Down
-*Page Up
+* Page Down
+* Page Up
 * Home key
-*End key
-*F10 to exit
+* End key
+* F10 to exit
 
 ![Screenshot](assets/Capture.JPG)
