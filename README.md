@@ -1,7 +1,7 @@
 # agonlight2-projetcs
 Utilities for agonlight2
 
-The projects are built with AgDev and binaries are provided, that you can put in the /mos directory of the SD-card.
+The projects are built with AgDev on windows and binaries are provided, that you can put in the /mos directory of the SD-card.
 
 Link for AgDev and instructions for installation [AgDev](https://github.com/pcawte/AgDev).
 
