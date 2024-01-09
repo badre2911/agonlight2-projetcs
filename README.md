@@ -9,22 +9,28 @@ Link for AgDev and instructions for installation [AgDev](https://github.com/pcaw
 ### scani2c
 allows you to scan the i2c bus of a module connected to the UEXT connector. The i2c address is displayed.
 
-launch scani2c from mos directory
+launch scani2c from mos directory.
+
+Example command line: `scani2c`
 
 output:
-I2C bus scanning
 
-Address 0x3C
+`I2C bus scanning`
+
+`Address 0x3C`
+
 
 ### send
 allows to send file to RS232 (UEXT)
 
 Put a file to /mos directory
 
-launch file send FILENAME
+Example command line: `send <filename>`
 
 ### dumpview
 allows to dump a file to screen.
+
+Example command line: `dumpview <filename>`
 
 show readme file from dumpview for more information
 
