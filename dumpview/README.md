@@ -14,3 +14,5 @@ The following keyboard keys allow you to navigate the screen.
 * Home key
 *End key
 *F10 to exit
+
+![Screenshot](assets/Capture.png)
