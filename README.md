@@ -21,7 +21,7 @@ output:
 
 
 ### send
-allows to send file to RS232 (UEXT)
+allows to send file to RS232 (UEXT). File is limited to 16k
 
 Put a file to /mos directory
 
