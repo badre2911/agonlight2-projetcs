@@ -1,8 +1,8 @@
-;
-; Title:	Main
-; Author:	Badre
-; Created:	08/01/2024
-;
+/*
+ Title:	Main
+ Author:	Badre
+ Created:	08/01/2024
+*/
 
 #include <stdio.h>
 #include <mos_api.h>
