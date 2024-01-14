@@ -1,3 +1,9 @@
+/*
+ Title:	    vdpmode.h
+ Author:	Badre
+ Created:	15/01/2023
+*/
+
 #ifndef _VDPMODE_H
 #define _VDPMODE_H
 
