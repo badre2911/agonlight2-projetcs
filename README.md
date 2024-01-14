@@ -34,3 +34,10 @@ Example command line: `dumpview <filename>`
 
 show readme file from dumpview for more information
 
+### ascii
+allows show ascii table.
+
+Put a file to /mos directory
+
+Example command line: `ascii`
+
