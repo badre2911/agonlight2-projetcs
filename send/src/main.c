@@ -7,7 +7,7 @@
 #include "uart.h"
 
 
-#define FILE_BUFFERSIZE 	2048
+#define FILE_BUFFERSIZE 	16384
 
 extern void	uart1_handler(void);
 
