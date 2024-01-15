@@ -10,6 +10,7 @@ Copy the dumpview.bin file to the /mos directory
 Example commande line: `dumpview <filename>`
 
 The following keyboard keys allow you to navigate to the screen.
+```
 * Up arrow
 * Down arrow
 * Page Down
@@ -17,6 +18,7 @@ The following keyboard keys allow you to navigate to the screen.
 * Home key
 * End key
 * F10 to exit
+```
 
 
 ![Screenshot](assets/Capture.JPG)
