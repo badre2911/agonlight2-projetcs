@@ -4,7 +4,7 @@ Demo menu VGA on agon in console mode (VDU 23,0,0xFF). it use escape code ansi t
 
 Put a file on /mos directory.
 
-Command line: > menuvga
+Command line: `menuvga`
 
 **Navigation**
 
@@ -21,6 +21,11 @@ Enter key validate option.
 For quit menu, select last option and type entre key
 
 For quit horizontal menu, select help option and type enter key.
+
+**Screenshots**
+
+
+
 
 
 
