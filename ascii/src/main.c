@@ -1,17 +1,20 @@
+
 /*
- Title:	Main
+ Title:		mos_kbdhit.h
  Author:	Badre
- Created:	15/01/2023
+ Created:	23/12/2023 
+ Last Updated: 17/01/2024
+
+ Modinfo:
+ 17/01/2024   Update code for waitMsg
+ 
 */
 
 #include <stdio.h>
 #include <mos_api.h>
-#include <agon/vdp_vdu.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include "conio_agon.h"
-
-//#define CTRL_KEY(k) ((k) & 0x1f)
 
 #define BYTE_TO_BINARY_PATTERN "%c%c%c%c%c%c%c%c"
 #define BYTE_TO_BINARY(byte)  \
@@ -25,15 +28,15 @@
   (byte & 0x01 ? '1' : '0')
 
 static void printAscii(int ascii);
-static void waitMsg(const char *msg);
 static void printHead();
+
 int main()
 {			
 	int thisByte = 32;
   	int lig = 0;
 
-	vdp_clear_screen();
-	vdp_cursor_enable(false);
+	clrscr();
+	cursorEnable(false);
 	printHead();
 			
 	while (true)
@@ -44,7 +47,10 @@ int main()
 		lig++;
 		thisByte++;		
 		if ((lig % 50) == 0 && lig != 0) {
-			waitMsg("Type key for continue ...\r\n");			
+			if(waitMsg("Press any key for continue or ESC for quit ...\r\n")) {
+				cursorEnable(true);
+				return 0;
+			}
 		}
 	}
 	//Display rest of line ascii
@@ -56,13 +62,13 @@ int main()
 		}					
 	}
 	
-	waitMsg("Type key for quit.");
-	vdp_cursor_enable(true);
+	waitMsg("Press any key for quit.");
+	cursorEnable(true);
 	return 0;
 }
 
 static void printHead() {
-	vdp_clear_screen();
+	clrscr();
 	gotoxy(1, 1);
 	printf("ASCII Table ~ Character Map\r\n\r\n");
 }
@@ -91,9 +97,5 @@ static void printAscii(int ascii)
 	printf("\r\n");
 }
 
-static void waitMsg(const char *msg)
-{  
-  printf("\r\n%s\r\n", msg);  
-  getch();  
-}
+
 

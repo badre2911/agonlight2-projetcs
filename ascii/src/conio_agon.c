@@ -1,7 +1,13 @@
 /*
- Title:	 	conio_agon.c
+ Title:		conio_agon.c
  Author:	Badre
- Created:	15/01/2023
+ Created:	23/12/2023 
+ Last Updated: 17/01/2024
+
+ Modinfo:
+ 17/01/2024		replace getsysvar_vkeycode by kbd_code
+ 				added waitMsg method 
+ 
 */
 
 #include <stdio.h>
@@ -9,9 +15,13 @@
 #include <stdint.h>
 #include <time.h>
 #include <agon/vdp_vdu.h>
+#include <agon/vdp_key.h>
+#include "agon_timer.h"
 #include "conio_agon.h"
+#include "mos_kbdhit.h"
+#include "vkey.h"
 
-
+#define CTRL_KEY(k) ((k) & 0x1f)
 #define LINE_SPACES	"                                                                                "
 
 static volatile SYSVAR *sv;
@@ -142,6 +152,34 @@ void xprintf(int row, int col, const char *format, ...)
 	va_end(ap);
 }
 
+bool waitMsg(const char *msg)
+{  
+	VKey vkey;
+	bool saisie = false;
+	
+	if(!sv) sv = vdp_vdu_init();
+	
+	printf("\r\n%s\r\n", msg); 
+
+	while(saisie == false)
+	{
+		if(kbd_hit())
+		{
+			vkey = kbd_code();  
+			if(vkey == VK_ESCAPE)
+			{				
+				saisie = true;				
+			} else {
+				break;
+			}
+			sv->vkeydown = 0;
+			
+		}						
+	}
+	
+	return saisie;
+}
+
 int setmode(int mode)
 {
 	putch(22);
@@ -150,8 +188,9 @@ int setmode(int mode)
 }
 
 void initSysvar()
-{
-	sv = vdp_vdu_init();
+{	
+	if(!sv) sv = vdp_vdu_init();
+	if ( vdp_key_init() == -1 ) return;
 }
 
 uint8_t vdp_cursorGetXpos(void)

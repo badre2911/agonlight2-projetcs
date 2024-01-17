@@ -1,7 +1,12 @@
 /*
- Title:	  conio_agon.h
- Author:	 Badre
- Created:	15/01/2023
+ Title:		conio_agon.h
+ Author:	Badre
+ Created:	23/12/2023 
+ Last Updated: 17/01/2024
+
+ Modinfo:
+ 17/01/2024		Add comment drawfkeys 				
+ 
 */
 
 #ifndef _CONIOAGON_H
@@ -40,10 +45,11 @@ void statusBar(int col, int row, const char *text);
 void textcolor(int fg);
 void graphicColor(int mode, int color);
 void textbackground(unsigned char bg);
-void drawfkeys(int col, int row, const char * const  fkeys[]);
+//void drawfkeys(int col, int row, const char * const  fkeys[]);
 void gotoxy(int row, int col);
 void cursorEnable(bool flag);
 int setmode(int mode);
+bool waitMsg(const char *msg);
 void initSysvar();
 uint8_t vdp_cursorGetXpos(void);
 uint8_t vdp_cursorGetYpos(void);
