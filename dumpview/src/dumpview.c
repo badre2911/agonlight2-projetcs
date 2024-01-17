@@ -1,7 +1,12 @@
 /*
- Title:		dumpview.c
+ Title:		mos_kbdhit.h
  Author:	Badre
- Created:	23/12/2023
+ Created:	23/12/2023 
+ Last Updated: 17/01/2024
+
+ Modinfo:
+ 17/01/2024   replace getsysvar_vkeycode by kbd_code
+ 
 */
 
 #include <stdio.h>
@@ -182,7 +187,7 @@ void dumpviewver(volatile void *start, unsigned long sizearray)
 	{		
 		if(kbd_hit())
 		{				
-			vkey = getsysvar_vkeycode(); 
+			vkey = kbd_code();  
 			
 			if (vkey == VK_UP || vkey == VK_KP_UP)
 			{
