@@ -1,12 +1,13 @@
 /*
- Title:		conio_agon.h
+ Title:		conio_agon.c
  Author:	Badre
  Created:	23/12/2023 
- Last Updated: 17/01/2024
+ Last Updated: 18/01/2024
 
  Modinfo:
- 17/01/2024		Add comment drawfkeys 				
- 
+ 17/01/2024		replace getsysvar_vkeycode by kbd_code
+ 				added waitMsg method 
+ 18/01/2024		permit CTR-c on waitMsg
 */
 
 #ifndef _CONIOAGON_H
@@ -50,6 +51,7 @@ void gotoxy(int row, int col);
 void cursorEnable(bool flag);
 int setmode(int mode);
 bool waitMsg(const char *msg);
+bool isKeyCtrl(char c);
 void initSysvar();
 uint8_t vdp_cursorGetXpos(void);
 uint8_t vdp_cursorGetYpos(void);

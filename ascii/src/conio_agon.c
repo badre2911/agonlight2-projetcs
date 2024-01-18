@@ -2,12 +2,12 @@
  Title:		conio_agon.c
  Author:	Badre
  Created:	23/12/2023 
- Last Updated: 17/01/2024
+ Last Updated: 18/01/2024
 
  Modinfo:
  17/01/2024		replace getsysvar_vkeycode by kbd_code
  				added waitMsg method 
- 
+ 18/01/2024		permit CTR-c on waitMsg
 */
 
 #include <stdio.h>
@@ -152,32 +152,37 @@ void xprintf(int row, int col, const char *format, ...)
 	va_end(ap);
 }
 
-bool waitMsg(const char *msg)
-{  
-	VKey vkey;
+bool isKeyCtrl(char c) {
+VKey vkey;
 	bool saisie = false;
+	char ch;
 	
 	if(!sv) sv = vdp_vdu_init();
-	
-	printf("\r\n%s\r\n", msg); 
-
+		 
 	while(saisie == false)
 	{
-		if(kbd_hit())
+		while(!kbd_hit());
+
+		vkey = kbd_code(); 
+		if(vkey == VK_LCTRL)
 		{
-			vkey = kbd_code();  
-			if(vkey == VK_ESCAPE)
-			{				
-				saisie = true;				
-			} else {
-				break;
-			}
-			sv->vkeydown = 0;
-			
-		}						
+			ch = getch();
+			if(ch == CTRL_KEY(c)) {
+				saisie = true;
+			} else break;
+		} else break;
+		
+		sv->vkeydown = 0;										
 	}
 	
 	return saisie;
+}
+
+bool waitMsg(const char *msg)
+{  
+	printf("\r\n%s\r\n", msg);
+	if(isKeyCtrl('c')) return true;
+	return false;	
 }
 
 int setmode(int mode)

@@ -47,7 +47,7 @@ int main()
 		lig++;
 		thisByte++;		
 		if ((lig % 50) == 0 && lig != 0) {
-			if(waitMsg("Press any key for continue or ESC for quit ...\r\n")) {
+			if(waitMsg("Press any key for continue or CTRL+c for quit ...\r\n")) {
 				cursorEnable(true);
 				return 0;
 			}
