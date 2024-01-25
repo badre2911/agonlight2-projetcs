@@ -45,7 +45,7 @@ Example command line: `ascii`
 
 allow configure wifi or restore to default factory the esp8266. Default baud is 115200.  
 Configuration is saved in flash. Key ESC allow quit without save.  
-Module esp8266 is conected to UEXT connector from agon (GNS, TX, RX). I use Nodecmu ESP8266EX but should also work on an ESP32.  
+Module esp8266 is conected to UEXT connector from agon (GND, TX, RX). I use Nodecmu ESP8266EX but should also work on an ESP32.  
 You can use too Olimex module MOD-WIFI-ESP8066.
 
 Put a file to /mos directory
