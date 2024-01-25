@@ -7,7 +7,7 @@ Configuration is saved in flash. Key ESC allow quit without save.
 You can use too Olimex module MOD-WIFI-ESP8066.
 
 I used firmware ESP8266-IDF-AT_2.2.1 AT command [firmware 2.2.1.0](https://docs.espressif.com/projects/esp-at/en/release-v2.2.0.0_esp8266/AT_Binary_Lists/ESP8266_AT_binaries.html)  
-Download Flash Download Tools [here](https://www.espressif.com/en/support/download/other-tools?keys=&field_type_tid%5B%5D=14)
+Download Flash Download Tools [here](https://www.espressif.com/en/support/download/other-tools?keys=&field_type_tid[]=14)
 
 Put a file to /mos directory
 
