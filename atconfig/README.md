@@ -1,4 +1,4 @@
-### atconfig
+## atconfig
 
 allow configure wifi or restore to default factory the esp8266. Default baud is 115200.  
 Configuration is saved in flash. Key ESC allow quit without save. 
