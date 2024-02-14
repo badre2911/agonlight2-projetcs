@@ -2,6 +2,10 @@
  Title:		conio_agon.h
  Author:	Badre
  Created:	23/12/2023
+ Last Updated: 14/02/2024
+
+ Modinfo:
+ 14/02/2024   added function valid_yesno
 */
 
 #ifndef _CONIOAGON_H
@@ -47,6 +51,7 @@ int setmode(int mode);
 void initSysvar();
 uint8_t vdp_cursorGetXpos(void);
 uint8_t vdp_cursorGetYpos(void);
+bool valid_yesno(int x, int y, const char * msg);
 
 
 #endif

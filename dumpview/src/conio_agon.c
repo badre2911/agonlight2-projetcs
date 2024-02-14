@@ -2,12 +2,17 @@
  Title:		conio_agon.c
  Author:	Badre
  Created:	23/12/2023
+ Last Updated: 14/02/2024
+
+ Modinfo:
+ 14/02/2024   added function valid_yesno
 */
 
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
 #include <time.h>
+#include <ctype.h>
 #include <mos_api.h>
 #include <agon/vdp_vdu.h>
 #include "conio_agon.h"
@@ -187,3 +192,29 @@ uint8_t vdp_cursorGetYpos(void)
 	return(sv->cursorY);
 }
 
+//Validate save
+bool valid_yesno(int x, int y, const char * msg)
+{
+	bool res = false;
+	char yesno;
+	
+	while(1) {
+		vdp_cursor_tab(x, y);
+		printf("%s", msg);
+		if(scanf("%c", &yesno) == EOF) return false;
+
+		if(yesno == 27) return false;
+		yesno = toupper(yesno);
+		
+		if(yesno == 'Y') {
+			res = true;
+			break;
+		}
+		else if(yesno == 'N') {
+			res = false;
+			break;
+		}
+		else continue;
+	}
+	return res;
+}
