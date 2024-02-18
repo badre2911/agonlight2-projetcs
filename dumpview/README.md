@@ -3,7 +3,7 @@ allows you to display a file as a dump.
 This program is a first version, it can be evolved if necessary.
 
 >[!NOTE]
->Limited size file is 64k
+>Limited size file is 204800 Bytes
 
 Copy the dumpview.bin file to the /mos directory
 
