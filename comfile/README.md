@@ -11,7 +11,7 @@ Launch comfile.bin on the Agon Light side and follow instructions
 Launch sendfile.bat yourfile.txt for example
 ```
 >[!IMPORTANT]
->Change COM port on file sendfile.bat
+>Change your COM port on file sendfile.bat
 
 
 **Hardware**  
