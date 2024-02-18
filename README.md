@@ -9,8 +9,7 @@ Link for AgDev and instructions for installation [AgDev](https://github.com/pcaw
 ### scani2c
 allows you to scan the i2c bus of a module connected to the UEXT connector. The i2c address is displayed if an module i2c is found.
 
-launch scani2c from mos directory.
-
+launch scani2c from mos directory.  
 Example command line: `scani2c`
 
 output:
@@ -21,28 +20,25 @@ output:
 
 
 ### send
-allows to send file to RS232 (UEXT). File is limited to 16k. Default BAUD is 115200
-
+allows to send file to RS232 (UEXT). File is limited to 16k. Default BAUD is 115200  
 Put a file to /mos directory
-
 Example command line: `send <filename>`
 
 ### dumpview
-allows to dump a file to screen.
-
-Example command line: `dumpview <filename>`
-
+allows to dump a file to screen.  
+Example command line: `dumpview <filename>`  
 show readme file from dumpview for more information
 
 ### ascii
-allows show ascii table.
-
-Put a file to /mos directory
-
+allows show ascii table.  
+Put a file to /mos directory  
 Example command line: `ascii`
 
 ### atconfig
 
-allow configure wifi or restore to default factory the esp8266. Default baud is 115200. 
-
+allow configure wifi or restore to default factory the esp8266. Default baud is 115200.  
 Show readme file from folder atconfig for more informations.
+
+### comfile  
+Allow to transfert binary or text file from PC to Agon  
+Show readme file from folder comfile for more informations.
