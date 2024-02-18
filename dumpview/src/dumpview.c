@@ -92,7 +92,7 @@ static const uint8_t *pointeurDebutLigne(size_t numeroLigne)
 size_t i;
 static void imprime(size_t numeroLigne)
 {
-	char hexVal[9] = {'\0'};
+	//char hexVal[9] = {'\0'};
 	uint8_t *mptr = NULL;
 	uint8_t *ptr = (uint8_t *)pointeurDebutLigne(numeroLigne);
 	mptr = ptr;
@@ -106,7 +106,7 @@ static void imprime(size_t numeroLigne)
 		  
 		mptr = &ptr[i * BYTE_COLUMN];
 		gotoxy(i + TOP_MARGIN, LEFT_MARGIN);		
-		clearRect(LEFT_MARGIN, TOP_MARGIN + i, MAX_X, TOP_MARGIN + i, BLACK); 
+		//clearRect(LEFT_MARGIN, TOP_MARGIN + i, MAX_X, TOP_MARGIN + i, BLACK); 
 
 		nbRow = ((fin - mptr) < BYTE_COLUMN) ? (fin - mptr) - 1 : BYTE_COLUMN;
 		amount = BYTE_COLUMN - nbRow;
@@ -123,9 +123,8 @@ static void imprime(size_t numeroLigne)
 
 		// Data
 		for (j = 0; j < nbRow; j++)
-		{
-			sprintf(hexVal, "%02X ", *mptr);			
-			printf("%s", hexVal);
+		{			
+			printf("%02X ", *mptr);
 			mptr++;
 		}
 
@@ -145,14 +144,14 @@ static void imprime(size_t numeroLigne)
 		{
 		  if (*mptr == VT)
 			printf(".");					   
-		  else if (*mptr >= 32)			
+		  else if (*mptr >= ' ' && *mptr <= '~')			
 		    printf("%c", *mptr);
-		  else			
-		    printf(".");
+		  else				  		
+		    putch('.');
 		  mptr++;
 		}
 		
-		//clreol();	
+		clreol();	
 	}
 	
 	//Clear rest of lines

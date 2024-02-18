@@ -18,7 +18,7 @@
 
 
 #define DEBUG 1
-#define BUFFER_SIZE	65535
+#define BUFFER_SIZE	204800 //65535
 
 int main(int argc, char *argv[])
 {			
@@ -42,12 +42,12 @@ int main(int argc, char *argv[])
 	fil = mos_getfil(fh);
 	size = fil->obj.objsize;
 
-	if(size > BUFFER_SIZE) {
+	if(size > (uint32_t)BUFFER_SIZE) {
 		puts("\r\nFile is too big!\r\n");
 		return 1;
 	}
 
-	printf("\r\nLoading file ...\r\n");
+	printf("\r\nLoading file ... Size %lu Byte(s)\r\n", size);
 	uint32_t sizeArray = size + 1;
     uint8_t * psBuf = (uint8_t *)malloc(sizeArray * sizeof(uint8_t));
 	if (psBuf == NULL) {
@@ -87,9 +87,10 @@ uint32_t dumpFileToBuffer(uint8_t handle, uint8_t * Buffer)
  
 	while(!mos_feof(handle)) {
 		uint8_t ch = mos_fgetc(handle);
-		Buffer[i++] = ch;
+		//Buffer[i++] = ch;
+		memcpy(&Buffer[i++], &ch, 1);		
 	}      
-  Buffer[i] = '\0';
+  //Buffer[i] = '\0';
   return i;
 }
 
