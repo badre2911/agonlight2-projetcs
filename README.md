@@ -20,9 +20,10 @@ output:
 
 
 ### send
-allows to send file to RS232 (UEXT). File is limited to 16k. Default BAUD is 115200  
-Put a file to /mos directory
-Example command line: `send <filename>`
+allows to send file to RS232 (UEXT).   
+Default BAUD is 115200  
+Put a file to /mos directory  
+Command line: `send <filename>`
 
 ### dumpview
 allows to dump a file to screen.  
