@@ -43,3 +43,9 @@ Show readme file from folder atconfig for more informations.
 ### comfile  
 Allow to transfert binary or text file from PC to Agon  
 Show readme file from folder comfile for more informations.
+
+### pause  
+allows to pause on batch file.  
+Put a file to /mos directory  
+Example command line: `pause`  
+Result: `Press any key to continue ...`
