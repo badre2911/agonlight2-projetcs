@@ -164,7 +164,7 @@ static void imprime(size_t numeroLigne)
 	}
 }
 
-void dumpviewver(volatile void *start, unsigned long sizearray)
+void dumpviewver(void *start, unsigned long sizearray)
 {
 	VKey vkey;	
 	bool saisie = false;

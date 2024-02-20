@@ -7,7 +7,6 @@
 #ifndef _DUMPVIEW_H
 #define _DUMPVIEW_H
 
-void dumpviewver(volatile void * start, unsigned long sizearray);
-uint32_t dumpFileToBuffer(uint8_t handle, uint8_t * Buffer);
+void dumpviewver(void * start, unsigned long sizearray);
 
 #endif
