@@ -3,11 +3,11 @@
  Title:		mos_kbdhit.h
  Author:	Badre
  Created:	23/12/2023 
- Last Updated: 17/01/2024
+ Last Updated: 22/02/2024
 
  Modinfo:
  17/01/2024   Update code for waitMsg
- 
+ 22/02/2024   Update code
 */
 
 #include <stdio.h>
@@ -27,12 +27,12 @@
   (byte & 0x02 ? '1' : '0'), \
   (byte & 0x01 ? '1' : '0')
 
-static void printAscii(int ascii);
+static void printAscii(uint8_t ascii);
 static void printHead();
 
 int main()
 {			
-	int thisByte = 32;
+	uint8_t thisByte = 32;
   	int lig = 0;
 
 	clrscr();
@@ -73,7 +73,7 @@ static void printHead() {
 	printf("ASCII Table ~ Character Map\r\n\r\n");
 }
 
-static void printAscii(int ascii)
+static void printAscii(uint8_t ascii)
 {
 	if(ascii == 127 ) {
 		printf("DEL"); //Delete key
