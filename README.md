@@ -3,6 +3,11 @@ Utilities for [agonlight2](https://www.olimex.com/Products/Retro-Computers/AgonL
 
 The projects are built with AgDev on windows and binaries are provided, that you can put in the /mos directory of the SD-card. Version of MOS and VDP are, MOS 2.1.0 and VDP 2.3.0, not tested with previous versions.
 
+In some assembler routines I refer to mos_api.inc via a path relative to where your project is located.
+Don't forget to change this path relative to where your source is located: `include '../../lib/libc/mos_api.inc'`  
+
+>Default projet are on folder CEdev/AgExamples/ (MyProject/src, MyProject/bin)
+
 Link for AgDev and instructions for installation [AgDev](https://github.com/pcawte/AgDev).
 
 
