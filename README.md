@@ -54,3 +54,9 @@ allows to pause on batch file.
 Put a file to /mos directory  
 Example command line: `pause`  
 Result: `Press any key to continue ...`
+
+### textprogress  
+
+Sample code that show progress bar on text mode (progress bar, spinner ...)  
+Put a file txtprogress.bin to /mos directory  
+Example command line: `txtprogress`
