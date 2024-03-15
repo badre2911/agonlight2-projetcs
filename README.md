@@ -60,3 +60,9 @@ Result: `Press any key to continue ...`
 Sample code that show progress bar on text mode (progress bar, spinner ...)  
 Put a file txtprogress.bin to /mos directory  
 Example command line: `txtprogress`
+
+### shell  
+
+Alow to show how call shell mos from c code.  
+Put a file on /mos directory
+Command line: `shell`
