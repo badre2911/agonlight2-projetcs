@@ -1,7 +1,7 @@
 # agonlight2-projetcs
 Utilities for [agonlight2](https://www.olimex.com/Products/Retro-Computers/AgonLight2/open-source-hardware)
 
-The projects are built with VSCODE AgDev on windows and binaries are provided, that you can put in the /mos directory of the SD-card. Version of MOS and VDP are, MOS 2.1.0 and VDP 2.3.0 or upper, not tested with previous versions.
+The projects are built with VSCODE AgDev on windows and binaries are provided, that you can put in the /mos directory of the SD-card. Version of MOS and VDP are, console8 MOS 2.1.0 and VDP 2.3.0 or upper, not tested with previous versions.
 
 In some assembler routines I refer to mos_api.inc via a path relative to where your project is located.
 Don't forget to change this path relative to where your source is located: `include '../../lib/libc/mos_api.inc'`  
