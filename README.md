@@ -65,4 +65,11 @@ Example command line: `txtprogress`
 
 Alow to show how call shell mos from c code.  
 Put a file on /mos directory
-Command line: `shell`
+Command line: `shell`  
+
+### crc32  
+
+Allow generate the CRC-32 value for the file named in the command line argument.  
+Put a file on /mos directory  
+Command line: `crc32 <filename>`
+
