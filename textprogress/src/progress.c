@@ -2,6 +2,11 @@
  Title:		progress.c
  Author:	Badre
  Created:	23/02/2024 
+ Last Updated: 20/03/2024
+
+ Modinfo: 
+ 23/03/2024		Update DoProgress
+ 				      Changed chat to uint8_t 
 */
 #include <stdio.h>
 #include <string.h>
@@ -66,7 +71,7 @@ void loadingSpinner(int x, int y, int pmax, char* title)
   cursorEnable(true);
 }
 
-void DoProgress(const char * label, int step, int total, char sep )
+void DoProgress(const char * label, int step, int total, uint8_t sep )
 {
   //progress width
   const int pwidth = 50;

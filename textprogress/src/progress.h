@@ -9,7 +9,7 @@
 void progressBar(int x, int y, int pmax, char* title, char sep);
 void loadingPercent(int x, int y, int pmax, char* title);
 void loadingSpinner(int x, int y, int pmax, char* title);
-void DoProgress(const char * label, int step, int total, char sep );
+void DoProgress(const char * label, int step, int total, uint8_t sep );
 
 
 #endif
