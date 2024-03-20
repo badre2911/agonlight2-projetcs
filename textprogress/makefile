@@ -18,7 +18,7 @@
 # Makefile Options
 # ----------------------------
 
-NAME = txtprogress
+NAME = textprogress
 #ICON = icon.png
 DESCRIPTION = "text progress bar"
 COMPRESSED = NO
