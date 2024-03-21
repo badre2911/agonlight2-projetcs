@@ -73,3 +73,14 @@ Allow generate the CRC-32 value for the file named in the command line argument.
 Put a file on /mos directory  
 Command line: `crc32 <filename>`
 
+### MD5
+
+MD5 Code adapted for AgonLight from Zunawe (https://github.com/Zunawe/md5-c),
+forked by MilchRatchet  (https://github.com/MilchRatchet/md5-c)  
+
+Allow calculate MD5 from string or file.  
+Put a file on /mos directory  
+
+**Command line:**  
+`MD5 <string>   ex: MD5 Hello`  
+`MD5 <filename> ex: MD5 myfile.txt`
