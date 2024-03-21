@@ -6,6 +6,7 @@
 
  Modinfo: 19/02/2024 Add message before launch transfert
 					 Add possibility to cancel transfert
+		  21/03/2024 Add delay for uart flush
 */
 #include <stdio.h>
 #include <mos_api.h>
@@ -58,6 +59,7 @@ void handle_uart1(uint24_t baudrate, char *fname)
 	bool cancel = false;		
 
 	uart1_flush();
+	delayms(1000);
 	vdp_clear_screen();
 	if(waitEscMsg("Press any key for continue or ESC for cancel\r\n")) {
 		return;
@@ -85,7 +87,7 @@ void handle_uart1(uint24_t baudrate, char *fname)
 	open_UART1(&pUART);	
 		
 	uart1_flush();	
-	delayms(10);
+	delayms(1000);
 	
 	if(fh)
 	{		
@@ -114,7 +116,9 @@ void handle_uart1(uint24_t baudrate, char *fname)
 		
 	} else printf("\r\nCouldn't open %s", fname);
 	
-	mos_fclose(fh);				
+	mos_fclose(fh);	
+	uart1_flush();
+	delayms(1000);
 	close_UART1();
 	mos_setintvector(UART1_IVECT, oldvector);	
 }
@@ -133,8 +137,7 @@ bool waitEscMsg(const char *msg) {
 		if(vkey == VK_ESCAPE)
 		{			
 			saisie = true;
-			break;
-			
+			break;			
 		} 		
 		sv->vkeydown = 0;	
 		break;									
