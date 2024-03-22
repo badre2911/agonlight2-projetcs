@@ -28,8 +28,10 @@ output:
 allows to send file to RS232 (UEXT). Escape Key to cancel transfert.  
 Default BAUD is 115200  
 Put a file to /mos directory  
-Command line: `send <filename>`    on Agon
-              `rcvfile <filename>  on PC hosts (batch file wiht python script)
+
+**Command line:**  
+`send <filename>`    on Agon  
+`rcvfile <filename>` on PC hosts (batch file with python script)
 
 ### dumpview
 allows to dump a file to screen.  
