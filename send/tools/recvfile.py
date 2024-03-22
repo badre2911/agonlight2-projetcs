@@ -1,18 +1,12 @@
-## Title:       sendfile.py
-## Author:      Jeroen Venema
-## Created:     25/10/2022
-## Last update: 11/09/2023
+## Title:       recvfile.py
+## Author:      badre2911
+## Created:     21/03/2024
+## Last update: 22/03/2024
 
 ## syntax
-## send.py FILENAME <PORT> <BAUDRATE>
+## recvfile.py FILENAME <PORT> <BAUDRATE>
 ## 
 
-## Modinfo:
-## 25/10/2022 initial version
-## 10/09/2023 Script converts binary file to Intel Hex during transmission. 
-##            Using defaults as constants.
-## 11/09/2023 Wait time variable introduced for handling PC serial drivers with low buffer memory
-## 18/02/2024 Modified by badre, removed code regarding hex files, any type of file can be sent
 
 #DEFAULT_START_ADDRESS = 0x40000
 DEFAULT_SERIAL_PORT   = 'COM17'
