@@ -7,6 +7,7 @@
  Modinfo: 19/02/2024 Add message before launch transfert
 					 Add possibility to cancel transfert
 		  21/03/2024 Add delay for uart flush
+		  			 Clean code
 */
 #include <stdio.h>
 #include <mos_api.h>
@@ -18,9 +19,6 @@
 #include "uart.h"
 #include "mos_kbdhit.h"
 #include "vkey.h"
-
-
-#define FILE_BUFFERSIZE 	131072
 
 extern void	uart1_handler(void);
 static volatile SYSVAR *sv;
