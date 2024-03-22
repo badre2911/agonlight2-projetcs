@@ -30,8 +30,8 @@ Default BAUD is 115200
 Put a file to /mos directory  
 
 **Command line:**  
-`send <filename>`    on Agon  
-`rcvfile <filename>` on PC hosts (batch file with python script)
+`send <filename>`    on Agon (ex: send myfile.bin)  
+`rcvfile <filename><com port><baud>` on PC hosts (ex: rcvfile myfile.bin COM2)
 
 ### dumpview
 allows to dump a file to screen.  
