@@ -2,17 +2,14 @@
 Allow transfert file from PC to Agonlight2 binary or text file.  
 Limited file to transfert is 256k.  
 Default baud is 115200.  
-transfert use a script `sendfile.py`for transfert file from PC to Agon
+transfert use a script `sendfile.py` and `sendfile.bat` for transfert file from PC to Agon
 
 ```
 Put a file comfile.bin to /mos directory  
-Download sendfile.py and sendfile.bat (folder tools) on your desktop where the file to transfert  
+Download sendfile.py and sendfile.bat (folder tools) on your desktop in directory where the file to transfert  
 Launch comfile.bin on the Agon Light side and follow instructions  
-Launch sendfile.bat yourfile.txt for example
+Launch sendfile.bat yourfile.txt COM2 for example
 ```
->[!IMPORTANT]
->Change your COM port on file sendfile.bat
-
 
 **Hardware**  
 
@@ -21,7 +18,9 @@ You can also use a USB RS232 TTL 3.3v adapter by connecting the GND, RX, TX of t
 
 **Usage**  
 
-Command line: `comfile -f myfile.txt`  
+Command line:  
+`comfile -f myfile.txt` on Agon  
+`sendfile myfile.txt COM2`on PC host
 
 ```
 Usage: comfile -f <filename> [OPTIONS]
@@ -37,12 +36,13 @@ Example: comfile -f myfile.txt -b 57600 -t 4000
 **Tools for Upload**  
 
 On folder tools you have a script sendfile.py and .bat file sendfile.bat  
-Launch transfert with command line: `sendfile myfile.txt`  
-Don't forget to modify your COM port in the sendfile.bat file  
+Launch transfert with command line: `sendfile myfile.txt COM2`  
+Don't forget to modify your COM port.  
 
 First, launch comfile on Agon then when you are ready to send the file which is on your PC,  
-press a key on the Agon keyboard or ESC to cancel,  
-at which point you launch the command `sendfile yourfile.txt`.
+Launch `sendfile myfile.txt COM2` on your PC host,
+When you are ready, press a key on the Agon keyboard or ESC to cancel for waiting transfert,  
+Press  Enter key on you PC host for launch transfert to Agon
 
 
 
