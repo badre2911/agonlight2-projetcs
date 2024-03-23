@@ -43,6 +43,14 @@ if len(sys.argv) == 1 or len(sys.argv) >4:
 if not os.path.isfile(sys.argv[1]):
   sys.exit(f'Error: file \'{sys.argv[1]}\' not found')
 
+try:
+    print('Launch comfile -f <filename> to Agon before continuing')
+    print('When you are ready, press any key and agon and press Enter key for launch transfert\r\n')
+    input("Press Enter to continue or CTRL+C for quit\r\n")
+except KeyboardInterrupt:
+    print('Program terminated !\r\n')
+    exit(1)
+    
 if len(sys.argv) == 2:
   #serialport = DEFAULT_SERIAL_PORT
   serialports = serial.tools.list_ports.comports()
