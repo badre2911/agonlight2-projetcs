@@ -52,7 +52,7 @@ allow configure wifi or restore to default factory the esp8266. Default baud is 
 Show readme file from folder atconfig for more informations.
 
 ### comfile  
-Allow to transfert binary or text file from PC to Agon  
+Allow to transfert binary or text file from Agon to PC
 Show readme file from folder comfile for more informations.
 
 ### pause  
