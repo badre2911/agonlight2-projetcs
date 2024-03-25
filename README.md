@@ -90,3 +90,11 @@ Put a file on /mos directory
 **Command line:**  
 `MD5 <string>   ex: MD5 Hello`  
 `MD5 <filename> ex: MD5 myfile.txt`
+
+### CP437  
+Allow load font CP437 to Agon  
+Put a file on /mos directory  
+Parameter reset permit to reset default font for Agon  
+
+Command line: `cp437 [reset]`
+
