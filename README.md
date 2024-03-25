@@ -28,7 +28,7 @@ output:
 
 
 ### send
-allows to send file to RS232 (UEXT). Escape Key to cancel transfert.  
+allows to send file to RS232 (UEXT) to PC host. Escape Key to cancel transfert.  
 Default BAUD is 115200  
 Put a file to /mos directory  
 
@@ -52,7 +52,7 @@ allow configure wifi or restore to default factory the esp8266. Default baud is 
 Show readme file from folder atconfig for more informations.
 
 ### comfile  
-Allow to transfert binary or text file from PC to Agon  
+Allow to transfert binary or text file from PC to Agon
 Show readme file from folder comfile for more informations.
 
 ### pause  
@@ -90,3 +90,11 @@ Put a file on /mos directory
 **Command line:**  
 `MD5 <string>   ex: MD5 Hello`  
 `MD5 <filename> ex: MD5 myfile.txt`
+
+### CP437  
+Allow load font CP437 to Agon  
+Put a file on /mos directory  
+Parameter reset permit to reset default font for Agon  
+
+Command line: `cp437 [reset]`
+
