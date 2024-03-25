@@ -28,7 +28,7 @@ output:
 
 
 ### send
-allows to send file to RS232 (UEXT). Escape Key to cancel transfert.  
+allows to send file to RS232 (UEXT) to PC host. Escape Key to cancel transfert.  
 Default BAUD is 115200  
 Put a file to /mos directory  
 
