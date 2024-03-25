@@ -104,3 +104,4 @@ file.close()
 file_stats = os.stat(sys.argv[1])
 if(file_stats.st_size == 0):
         os.remove(sys.argv[1]) 
+        print("Nothing received or timeout has expired")
