@@ -5,7 +5,7 @@
 */
 #include "font.h"
 
-uint8_t console_font_8x8[] = {
+const uint8_t console_font_8x8[] = {
 
     /*
      * code=0, hex=0x00, ascii="^@"

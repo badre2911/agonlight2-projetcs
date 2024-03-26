@@ -17,7 +17,7 @@ typedef struct {
 	int len;			//Len array font / 8
 	uint8_t first_char;
 	uint8_t last_char;
-	uint8_t *data; /*!< Pointer to data font data array */
+	const uint8_t *data; /*!< Pointer to data font data array */
 } FontDef_t;
 
 void load_font(FontDef_t fontdef);
