@@ -102,3 +102,5 @@ Command line: `cp437 [reset]`
 Allow rendering 8x8 monochrome bitmap font. Adapted from Daniel Hepper render.  
 Put a file on /mos directory  
 Command line: `render <char_code>` (ex: render 65)  
+Ascii char code range it 0-127 but only 32 to 127 is rendering.  
+
