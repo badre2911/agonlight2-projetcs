@@ -104,3 +104,9 @@ Put a file on /mos directory
 Command line: `render <char_code>` (ex: render 65)  
 Ascii char code range it 0-127 but only 32 to 127 is rendering.  
 
+### listdir  
+
+Allow to show how API FatFs on AgDev work.  
+It list root directory.  
+Put a file on /mos directory  
+Command line: `listdir`
