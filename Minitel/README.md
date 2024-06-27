@@ -15,7 +15,7 @@ Press a key on minitel (GUIDE, ANNULATION, RETOUR, etc .., key is show on consol
 For quit , press ENVOI key. 
 
 ### vdt
-allows you to sent vdt file to Minitel. 
+allows you to sent vdt file to Minitel.  
 BAUDS is detected automatic 
 Put a file to /bin directory 
 
