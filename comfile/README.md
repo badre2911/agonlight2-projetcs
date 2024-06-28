@@ -2,7 +2,8 @@
 Allow transfert file from PC to Agonlight2 binary or text file.  
 Limited file to transfert is 256k.  
 Default baud is 115200.  
-transfert use a script `sendfile.py` and `sendfile.bat` for transfert file from PC to Agon
+transfert use a script `sendfile.py` and `sendfile.bat` for transfert file from PC to Agon or an terminal as tera term or other  
+NOTE: transfert is slow on uart1 (UEXT PORT)
 
 ```
 Put a file comfile.bin to /bin directory  
