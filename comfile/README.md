@@ -5,10 +5,16 @@ Default baud is 115200.
 transfert use a script `sendfile.py` and `sendfile.bat` for transfert file from PC to Agon
 
 ```
-Put a file comfile.bin to /mos directory  
+Put a file comfile.bin to /bin directory  
 Download sendfile.py and sendfile.bat (folder tools) on your desktop in directory where the file to transfert  
 Launch comfile.bin on the Agon Light side and follow instructions  
 Launch sendfile.bat yourfile.txt COM2 for example
+
+or simpler
+
+run comfile from the /bin directory of agonlight  
+press any key to wait for the file to be sent  
+open a terminal (tera term for example), select send file, select file and open the file is transferred to the agon.
 ```
 
 **Hardware**  
@@ -20,7 +26,7 @@ You can also use a USB RS232 TTL 3.3v adapter by connecting the GND, RX, TX of t
 
 Command line:  
 `comfile -f myfile.txt` on Agon  
-`sendfile myfile.txt COM2`on PC host
+`sendfile myfile.txt COM2`on PC host or use terminal teram term for example
 
 ```
 Usage: comfile -f <filename> [OPTIONS]
