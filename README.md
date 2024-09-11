@@ -116,6 +116,8 @@ Command line: `listdir`
 
 ### keytest
 Allow testing keyboard key from UART1.  
+You have to connect UART1 to serial with USB-TTL 3.3v on PC and use terminal (teraterm or other).  
+or connect keyboard with for example uterm-s or other
 Put a file on /bin directory  
 Command line: `keytest`  
 Press CTRL+C for quit.  
