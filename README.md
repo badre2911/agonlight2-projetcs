@@ -3,7 +3,8 @@ Utilities for [agonlight2](https://www.olimex.com/Products/Retro-Computers/AgonL
 
 The projects are built with VSCODE AgDev on windows and binaries are provided, that you can put in the /mos directory of the SD-card. Version of MOS and VDP are, console8 MOS 2.2.0 and VDP 2.7.0 or above, not tested with previous versions.  
 
-Currently the program uses the memory address 0x0B000 in the Makefile for AgDev and the program is placed in the `/mos directory`, in a future version of mos, you will be able to put them in the `/bin directory` by modifying the address 0x0B000 to 0x04000 on Makefile, you will need to recompile the program.
+Currently the program uses the memory address 0x0B000 in the Makefile for AgDev and the program is placed in the `/mos directory`, in a future version of mos, you will be able to put them in the `/bin directory` by modifying the address 0x0B000 to 0x04000 on Makefile, you will need to recompile the program.  
+If the program not work, put it to /bin directory and launch ot directly.
 
 In some assembler routines I refer to mos_api.inc via a path relative to where your project is located.
 Don't forget to change this path relative to where your source is located: `include '../../lib/libc/mos_api.inc'`  
@@ -112,3 +113,9 @@ Allow to show how API FatFs on AgDev work.
 It list root directory.  
 Put a file on /mos directory  
 Command line: `listdir`
+
+### keytest
+Allow testing keyboard key from UART1.  
+Put a file on /bin directory  
+Command line: `keytest`  
+Press CTRL+C for quit.  
