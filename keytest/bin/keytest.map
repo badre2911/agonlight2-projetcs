@@ -1,0 +1,125 @@
+Section     Base   Top    High   Length
+----------- ------ ------ ------ -------
+.libs       040045 040045             0h
+.init       040045 04006B            26h
+.fini       04006B 0400F3            88h
+.init.args  0400F3 0400F3             0h
+.init.bss   0400F3 0400FF             Ch
+.text       0400FF 0428C4          27C5h
+.data       0428C4 0428D9            15h
+.rodata     0428D9 042A24           14Bh
+.init_array 000000 000000             0h
+.ctors      000000 000000             0h
+.dtors      000000 000000             0h
+.fini_array 000000 000000             0h
+.bss        060000 060006 09FFFF      6h
+.header     040000 040045            45h
+
+Label                    Value
+----------------------   ------
+___low_bss             = 060000
+___len_bss             = 000006
+___heaptop             = 09FFFF
+___heapbot             = 060006
+___init_array_count    = 000000
+___ctors_count         = 000000
+___dtors_count         = 000000
+___fini_array_count    = 000000
+__stack                = 0AFFFF
+__land                 = 0400FF
+__iand                 = 040103
+__bshl                 = 04011A
+__fcmp                 = 040123
+__frameset             = 040140
+__frameset0            = 04014E
+__imulu                = 040159
+__indcallhl            = 040189
+__ineg                 = 04018A
+__ishl                 = 040193
+__ishru                = 0401B9
+__ladd                 = 0401FA
+__lcmps                = 040200
+__lcmpu                = 04020D
+__lcmpzero             = 040215
+__ldivu                = 040220
+__ldvrmu               = 04022A
+__lladd                = 040252
+__lland                = 040276
+__llcmpu               = 0402B3
+__llcmpzero            = 0402DD
+__llctlz               = 0402F2
+__lldivs               = 04030A
+__lldivu               = 04035A
+__lldvrmu              = 04036E
+__lldvrmu.hijack       = 040375
+__llmulu               = 0403CC
+__llneg                = 040421
+__llshl                = 04043A
+__llshrs.hijack_llshru = 040468
+__llshrs.finish        = 040487
+__llshru               = 04048B
+__llsub                = 0404A5
+__lshrs.hijack_lshru   = 0404D3
+__lshru                = 0404E2
+__ior                  = 0404F2
+__setflag              = 040509
+__ixor                 = 040518
+__stdio_init           = 04052F
+_stdin                 = 0428C4
+_stdout                = 0428C9
+_stderr                = 0428CE
+_fputc                 = 040581
+_fput_char             = 040611
+_npf_vpprintf          = 040638
+JTI0_0                 = 0428D9
+JTI0_1                 = 0428F7
+JTI0_2                 = 04293C
+JTI0_3                 = 04295D
+JTI0_4                 = 042975
+JTI0_5                 = 04298D
+_npf_utoa_rev          = 041DA2
+_printf                = 041E6A
+_vprintf               = 041E89
+_npf_putc_std          = 041EA9
+_.str                  = 0429A5
+_.str.1                = 0429A9
+_.str.2                = 0429AD
+_free                  = 041EB9
+__alloc_base           = 060000
+_mos_fputc             = 042219
+_mos_setintvector      = 0422EB
+_outchar               = 042464
+_putchar               = 04246B
+_puts                  = 04249A
+___null_literal_str    = 0429B1
+___end_of_line_str     = 0429B8
+__sbrkbase             = 0428D3
+__start                = 040045
+skip._abort            = 0400A5
+_exit.sp               = 0400A6
+_clear_bss             = 0400F3
+exit_functions         = 0428D6
+__getch                = 0424C6
+_describe              = 0424D1
+_main                  = 042559
+_open_UART1            = 04265F
+_close_UART1           = 04278A
+_.str                  = 0429BA
+_.str.1.3              = 0429C1
+_.str.2.4              = 0429C8
+_.str.3.5              = 0429CE
+_.str.4.6              = 0429D4
+_.str.5.7              = 0429DB
+_.str.6.8              = 0429E2
+_.str.7.9              = 0429E7
+_.str.8.10             = 0429ED
+_.str.10.11            = 0429F1
+_str                   = 0429FF
+_str.13                = 042A19
+_uart0_kbhit           = 04282D
+_uart1_handler         = 0427D7
+_uart1_kbhit           = 042890
+_uart1_flush           = 0428AB
+_uart1_read            = 042899
+_uart0_getch           = 04281A
+_uart1_getch           = 04287D
