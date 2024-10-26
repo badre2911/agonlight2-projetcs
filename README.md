@@ -60,20 +60,20 @@ Show readme file from folder comfile for more informations.
 
 ### pause  
 allows to pause on batch file.  
-Put a file to /mos directory  
+Put a file to /bin directory  
 Example command line: `pause`  
 Result: `Press any key to continue ...`
 
 ### textprogress  
 
 Sample code that show progress bar on text mode (progress bar, spinner ...)  
-Put a file txtprogress.bin to /mos directory  
+Put a file txtprogress.bin to /bin directory  
 Example command line: `txtprogress`
 
 ### shell  
 
 Alow to show how call shell mos from c code.  
-Put a file on /mos directory
+Put a file on /bin directory
 Command line: `shell`  
 
 ### crc32  
