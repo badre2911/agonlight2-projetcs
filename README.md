@@ -13,9 +13,9 @@ Don't forget to change this path relative to where your source is located: `incl
 >Default projet are on folder CEdev/AgExamples/ (MyProject/src, MyProject/bin)
 
 Link for AgDev and instructions for installation [AgDev](https://github.com/pcawte/AgDev).  
-Link for VDU 25 PLOT command [PLOT](https://agonconsole8.github.io/agon-docs/VDP---PLOT-Commands.html).  
-Link for VDU commands [VDU](https://agonconsole8.github.io/agon-docs/VDP---VDU-Commands.html).  
-Link for VDP System Command [VDP](https://agonconsole8.github.io/agon-docs/VDP---System-Commands.html).
+Link for VDU 25 PLOT command [PLOT](https://agonconsole8.github.io/agon-docs/vdp/PLOT-Commands/?h=plot).  
+Link for VDU commands [VDU](https://agonconsole8.github.io/agon-docs/vdp/VDU-Commands/?h=vdu).  
+Link for VDP System Command [VDP](https://agonconsole8.github.io/agon-docs/vdp/System-Commands/?h=vdp).
 
 
 ### scani2c
