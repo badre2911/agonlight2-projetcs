@@ -79,7 +79,7 @@ Command line: `shell`
 ### crc32  
 
 Allow generate the CRC-32 value for the file named in the command line argument.  
-Put a file on /mos directory  
+Put a file on /bin directory  
 Command line: `crc32 <filename>`
 
 ### MD5
