@@ -17,7 +17,9 @@ Link for VDU 25 PLOT command [PLOT](https://agonconsole8.github.io/agon-docs/vdp
 Link for VDU commands [VDU](https://agonconsole8.github.io/agon-docs/vdp/VDU-Commands/?h=vdu).  
 Link for VDP System Command [VDP](https://agonconsole8.github.io/agon-docs/vdp/System-Commands/?h=vdp).  
 Agon MOS TOOLS [Agon-MOS-Tools](https://github.com/nihirash/Agon-MOS-Tools).  
-Agon flash [Agon FLASH](https://github.com/envenomator/agon-flash/releases/tag/v1.7).
+Agon flash [Agon FLASH](https://github.com/envenomator/agon-flash/releases/tag/v1.7).  
+Update firmware by Web [Update](https://envenomator.github.io/).  
+CP/M 2.2 from nihirash [CP/M 2.2](https://github.com/nihirash/Agon-CPM2.2).
 
 ### scani2c
 allows you to scan the i2c bus of a module connected to the UEXT connector. The i2c address is displayed if an module i2c is found.
