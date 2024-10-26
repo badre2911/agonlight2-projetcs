@@ -20,7 +20,7 @@ Link for VDP System Command [VDP](https://agonconsole8.github.io/agon-docs/VDP--
 ### scani2c
 allows you to scan the i2c bus of a module connected to the UEXT connector. The i2c address is displayed if an module i2c is found.
 
-launch scani2c from mos directory.  
+launch scani2c from bin directory.  
 Example command line: `scani2c`
 
 output:
