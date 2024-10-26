@@ -1,11 +1,12 @@
 /*
- Title:		conio_agon.c
- Author:	Badre
- Created:	23/12/2023
- Last Updated: 14/02/2024
+ Title:			conio_agon.c
+ Author:		Badre
+ Created:		23/12/2023
+ Last Updated: 	26/10/2024
 
  Modinfo:
- 14/02/2024   added function valid_yesno
+ 14/02/2024   	added function valid_yesno
+ 26/10/2024		Bug fix on gotoxy and vdp_flags
 */
 
 #include <stdio.h>
@@ -63,7 +64,7 @@ void cursorEnable(bool flag)
 
 void gotoxy(int row, int col)
 {	
-    vdp_cursor_tab(row, col);		
+    vdp_cursor_tab(col, row);		
 }
 
 void textattr(int bg, int fg)
@@ -170,11 +171,11 @@ uint8_t vdp_cursorGetXpos(void)
 {	
 	if(!sv) sv = vdp_vdu_init();
 	
-	sv->vpd_pflags = 0x00;	
+	sv->vdp_pflags = 0x00;	
 	putch(23);	// VDP command
 	putch(0);	// VDP command
 	putch(0x82);	// Request cursor position
-	while(!(sv->vpd_pflags & vdp_pflag_cursor));
+	while(!(sv->vdp_pflags & vdp_pflag_cursor));
 
 	return(sv->cursorX);
 }
@@ -183,11 +184,11 @@ uint8_t vdp_cursorGetYpos(void)
 {	
 	if(!sv) sv = vdp_vdu_init();
 	
-	sv->vpd_pflags = 0x00;	
+	sv->vdp_pflags = 0x00;	
 	putch(23);	// VDP command
 	putch(0);	// VDP command
 	putch(0x82);	// Request cursor position
-	while(!(sv->vpd_pflags & vdp_pflag_cursor));
+	while(!(sv->vdp_pflags & vdp_pflag_cursor));
 
 	return(sv->cursorY);
 }
