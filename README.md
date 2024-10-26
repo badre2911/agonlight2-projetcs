@@ -33,7 +33,7 @@ output:
 ### send
 allows to send file to RS232 (UEXT) to PC host. Escape Key to cancel transfert.  
 Default BAUD is 115200  
-Put a file to /mos directory  
+Put a file to /bin directory  
 
 **Command line:**  
 `send <filename>`    on Agon (ex: send myfile.bin)  
@@ -46,7 +46,7 @@ show readme file from dumpview for more information
 
 ### ascii
 allows show ascii table.  
-Put a file to /mos directory  
+Put a file to /bin directory  
 Example command line: `ascii`
 
 ### atconfig
@@ -96,7 +96,7 @@ Put a file on /mos directory
 
 ### CP437  
 Allow load font CP437 to Agon  
-Put a file on /mos directory  
+Put a file on /bin directory  
 Parameter reset permit to reset default font for Agon  
 
 Command line: `cp437 [reset]`
