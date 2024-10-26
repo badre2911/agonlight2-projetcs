@@ -19,11 +19,13 @@
 # ----------------------------
 
 NAME = cp437
+BINDIR=bin
+EMUDIR=..\\..\\fab-agon-emulator\\sdcard\\bin
 #ICON = icon.png
 DESCRIPTION = "load font cp437"
 COMPRESSED = NO
 ARCHIVED = NO
-INIT_LOC = 0B0000
+INIT_LOC = 040000
 #BSSHEAP_LOW = 040000
 #BSSHEAP_HIGH = 0A7FFF
 BSSHEAP_LOW = 060000
@@ -36,4 +38,11 @@ CXXFLAGS = -Wall -Wextra -Oz
 # ----------------------------
 
 include $(shell cedev-config --makefile)
+
+install: bin/$(NAME).bin
+	srec_cat bin/$(NAME).bin -binary -offset 0x40000 -o bin/$(NAME).hex -intel
+	xcopy /Y /D bin\$(NAME).bin ..\..\fab-agon-emulator\sdcard\bin\ 
+
+run: install
+
 
