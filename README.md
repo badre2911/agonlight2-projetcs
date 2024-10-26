@@ -88,7 +88,7 @@ MD5 Code adapted for AgonLight from Zunawe (https://github.com/Zunawe/md5-c),
 forked by MilchRatchet  (https://github.com/MilchRatchet/md5-c)  
 
 Allow calculate MD5 from string or file.  
-Put a file on /mos directory  
+Put a file on /bin directory  
 
 **Command line:**  
 `MD5 <string>   ex: MD5 Hello`  
