@@ -44,6 +44,18 @@ allows to dump a file to screen.
 Example command line: `dumpview <filename>`  
 show readme file from dumpview for more information
 
+### ansiterm
+Ansi terminal.  
+Put a file to /bin directory  
+Example command line: `ansiterm [parameters]` 
+
+`Usage: mosterm [OPTIONS]`  
+`-h this help`  
+`-b <baud> (default 115200)`  
+`-d <databits> (default is 8 (5, 6, 7, 8))`  
+`-p <parity> (default is N (N, E, O))`  
+`-r Add CRLF`
+
 ### ascii
 allows show ascii table.  
 Put a file to /bin directory  
