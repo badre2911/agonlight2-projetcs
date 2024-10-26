@@ -22,7 +22,7 @@ NAME = md5
 BINDIR=bin
 EMUDIR=..\\..\\fab-agon-emulator\\sdcard\\bin
 #ICON = icon.png
-DESCRIPTION = "show rtc time"
+DESCRIPTION = "md5 string or file"
 COMPRESSED = NO
 ARCHIVED = NO
 INIT_LOC = 040000
@@ -34,7 +34,6 @@ STACK_HIGH = 0AFFFF
 
 CFLAGS = -Wall -Wextra -Oz
 CXXFLAGS = -Wall -Wextra -Oz
-
 
 # ----------------------------
 

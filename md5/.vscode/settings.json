@@ -1,12 +1,6 @@
 {
     "cedev_path": "D:\\CEdev",
     "files.associations": {
-        "macro.h": "c",
-        "str2num.h": "c",
-        "mos-interface.h": "c",
-        "conio_agon.h": "c",
-        "dumpview.h": "c",
-        "vkey.h": "c",
-        "stdint.h": "c"
-    }
+        "mos_api.h": "c"       
+    }   
 }

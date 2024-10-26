@@ -1,21 +1,29 @@
-{
+{    
     "configurations": [
+        
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "D:\\CEdev\\include",
-                "D:\\CEdev\\src\\libc\\include"
+                "${workspaceFolder}/**",               
+                "${workspaceFolder}/../../**"                                              
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "cStandard": "c17",
+            "browse": {
+                "path": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../**"                 
+                ]
+            },
+            "compilerPath": "${workspaceFolder}/../../bin/ez80-clang.exe", 
+           // "compilerArgs": ["-I${workspaceFolder}/src_fatfs"],           
+            "cStandard": "gnu17",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "windows-gcc-x86",
-            "compilerPath": "D:\\CEdev\\bin\\ez80-clang.exe"
+            "intelliSenseMode": "windows-clang-x86",
+            "configurationProvider": "ms-vscode.makefile-tools"
         }
     ],
     "version": 4
