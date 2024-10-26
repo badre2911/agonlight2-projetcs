@@ -17,24 +17,25 @@ Command line: `menuvga`
 **Navigation**
 
 ```
-Up arrow
-Down arrow
-Home key
-End key
+Up arrow or CTRL-E
+Down arrow or CTRL-X
+Home key or CTRL-A
+End key or CTRL-F
+CTRL-D for Right
+CTRL-S for Left
 Enter
 ```
 
 **Action of keys**
 
 ```
-Enter key validate option. 
-For quit menu, select last option and type entre key
-For qui submenu, type enter key in any selected option
-For quit horizontal menu, select help option and type enter key.
+Enter key validate option.
+Esc key for quit application or submenu
+For quit horizontal menu, select help option and type enter key or Esc key.
 ```
 
 
-**Screenshots**
+**Screenshots (Not updated)**
 
 ![Screenschot](assets/img1829.JPG)
 ![Screenschot](assets/img1830.JPG)
