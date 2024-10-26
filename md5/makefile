@@ -19,11 +19,13 @@
 # ----------------------------
 
 NAME = md5
+BINDIR=bin
+EMUDIR=..\\..\\fab-agon-emulator\\sdcard\\bin
 #ICON = icon.png
-DESCRIPTION = "md5 string or file"
+DESCRIPTION = "show rtc time"
 COMPRESSED = NO
 ARCHIVED = NO
-INIT_LOC = 0B0000
+INIT_LOC = 040000
 #BSSHEAP_LOW = 040000
 #BSSHEAP_HIGH = 0A7FFF
 BSSHEAP_LOW = 060000
@@ -33,7 +35,14 @@ STACK_HIGH = 0AFFFF
 CFLAGS = -Wall -Wextra -Oz
 CXXFLAGS = -Wall -Wextra -Oz
 
+
 # ----------------------------
 
 include $(shell cedev-config --makefile)
 
+install: $(BINDIR)/$(NAME).bin
+# these lines below are optional you can comment it if you don't use them
+	srec_cat $(BINDIR)/$(NAME).bin -binary -offset 0x40000 -o $(BINDIR)/$(NAME).hex -intel 
+	xcopy /Y /D $(BINDIR)\$(NAME).bin $(EMUDIR)\\ 
+
+run: install
