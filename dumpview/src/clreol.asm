@@ -95,7 +95,7 @@ _set0_sysvar_vpd_pflags:
 	ld		a, mos_sysvars
 	rst.lil	08h
     ld      a, 00h
-	ld	    (ix+sysvar_vpd_pflags), a 
+	ld	    (ix+sysvar_vdp_pflags), a 
 	pop		ix
 	ret
 
@@ -104,7 +104,7 @@ _get_sysvar_vpd_pflags:
 	push	ix
 	ld		a, mos_sysvars
 	rst.lil	08h
-	ld		a, (ix+sysvar_vpd_pflags)
+	ld		a, (ix+sysvar_vdp_pflags)
 	pop		ix
 	ret
 

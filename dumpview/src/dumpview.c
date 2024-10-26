@@ -2,11 +2,11 @@
  Title:		mos_kbdhit.h
  Author:	Badre
  Created:	23/12/2023 
- Last Updated: 17/01/2024
+ Last Updated: 26/10/2024
 
  Modinfo:
- 17/01/2024   replace getsysvar_vkeycode by kbd_code
- 
+ 17/01/2024		replace getsysvar_vkeycode by kbd_code
+ 26/10/2024		Change F10 key with F7 key for Quit
 */
 
 #include <stdio.h>
@@ -246,14 +246,13 @@ void dumpviewver(void *start, unsigned long sizearray)
 				imprime(ligneDebut);
 				}
 			}
-			else if (vkey == VK_F10)
+			else if (vkey == VK_F7)
 			{
 				saisie = true;
 			}	
 						
 			sv->vkeydown = 0;			
-		}
-		
+		}		
 	}
 	crlf();
 	debut = NULL;
@@ -273,11 +272,11 @@ void printTitle()
 	clreol();
 }
 
-void drawfkeys(int col, int row, const char * const fkeys[])
+void drawfkeys(int row, int col, const char * const fkeys[])
 {
 	int i, j;
 
-	gotoxy(row, col);
+	gotoxy(col, row);
 	for (i = 0, j = 0; i < 9; i++)
 	{
 		if (fkeys[i] == 0) continue;
