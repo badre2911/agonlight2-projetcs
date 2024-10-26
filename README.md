@@ -110,8 +110,8 @@ Ascii char code range it 0-127 but only 32 to 127 is rendering.
 ### listdir  
 
 Allow to show how API FatFs on AgDev work.  
-It list root directory.  
-Put a file on /mos directory  
+It list mos directory.  
+Put a file on /bin directory  
 Command line: `listdir`
 
 ### keytest
