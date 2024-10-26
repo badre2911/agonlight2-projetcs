@@ -19,11 +19,13 @@
 # ----------------------------
 
 NAME = dumpview
+BINDIR=bin
+EMUDIR=..\\..\\fab-agon-emulator\\sdcard\\bin
 #ICON = icon.png
 DESCRIPTION = "Dump Viewver"
 COMPRESSED = NO
 ARCHIVED = NO
-INIT_LOC = 0B0000
+INIT_LOC = 040000
 #BSSHEAP_LOW = 040000
 #BSSHEAP_HIGH = 0A7FFF
 BSSHEAP_LOW = 060000
@@ -38,3 +40,7 @@ CXXFLAGS = -Wall -Wextra -Oz
 # ----------------------------
 
 include $(shell cedev-config --makefile)
+
+install: $(BINDIR)/$(NAME).bin
+	srec_cat $(BINDIR)/$(NAME).bin -binary -offset 0x40000 -o $(BINDIR)/$(NAME).hex -intel 
+	xcopy /Y /D $(BINDIR)\$(NAME).bin $(EMUDIR)\\
