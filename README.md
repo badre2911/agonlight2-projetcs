@@ -15,8 +15,8 @@ Don't forget to change this path relative to where your source is located: `incl
 Link for AgDev and instructions for installation [AgDev](https://github.com/pcawte/AgDev).  
 Link for VDU 25 PLOT command [PLOT](https://agonconsole8.github.io/agon-docs/vdp/PLOT-Commands/?h=plot).  
 Link for VDU commands [VDU](https://agonconsole8.github.io/agon-docs/vdp/VDU-Commands/?h=vdu).  
-Link for VDP System Command [VDP](https://agonconsole8.github.io/agon-docs/vdp/System-Commands/?h=vdp).
-
+Link for VDP System Command [VDP](https://agonconsole8.github.io/agon-docs/vdp/System-Commands/?h=vdp).  
+Agon MOS TOOLS [Agon-MOS-Tools](https://github.com/nihirash/Agon-MOS-Tools).
 
 ### scani2c
 allows you to scan the i2c bus of a module connected to the UEXT connector. The i2c address is displayed if an module i2c is found.
