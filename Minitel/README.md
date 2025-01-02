@@ -22,5 +22,8 @@ Put a file to /bin directory
 **Command line:**  
 `vdt <filename>` 
 
+### LIB  
+Directory that contains library Minitel from Eric Sérandour adapted and modified for AgonLight2 for AgDev.  
+
 
 
