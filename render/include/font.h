@@ -31,5 +31,6 @@ extern FontDef_t Font_box_8x8;
 extern FontDef_t Font_ext_latin_8x8;
 extern FontDef_t Font_c64_8x8;
 extern FontDef_t Font_basic_8x8;
+extern FontDef_t Font_vga_16;
 
 #endif
